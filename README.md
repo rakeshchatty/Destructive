@@ -6,7 +6,16 @@ Consider a scenario where we need to delete components first and then update exi
 
 Consider a scenario where we need to update existing components or deploy new components first and then delete the components. In this case, we can opt for the destructiveChangesPost.xml. In this process, the package will deploy existing components updates or new components first and then delete the components. This means package.xml executes first and then destructiveChangesPost.xml will be executed.
 
-**Reference:**
+**Naming convention for xml file**
+If you are planning for PreDestructiveDeployment or PostDestructiveDeployment Or only Destructive then update file name destructivedepolymentpost.xml in above repository as be
+PreDestructiveDeployment  => destructiveChangesPre.xml
+PostDestructiveDeployment => destructiveChangesPost.xml
+DestructiveDeployment     => destructiveChanges.xml
 
-https://www.v2force.com/blogs/destructive-deployment-with-metadata-api/
-https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/daas_destructive_changes.htm
+
+**Reference:**
+1. https://www.v2force.com/blogs/destructive-deployment-with-metadata-api/
+
+2. https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/daas_destructive_changes.htm
+
+
